@@ -1,4 +1,4 @@
-@extends('container')
+@extends('netmatters')
 @section('content')
 <div class="hero-wrapper">
     <div class="hero-leading">
