@@ -1,0 +1,901 @@
+.hero-leading {
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/leading.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 60px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+        text-align: start;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #926fb1;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #7e57a0;
+        border-color: #735093;
+        cursor: pointer;
+      }
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+  @media (min-width: 768px) {
+    height: 550px;
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}
+
+.hero-bespoke {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/bespoke.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #67809f;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #566C88;
+        border-color: #4e627b;
+        cursor: pointer;
+      }
+
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+      padding-top: 150px;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}
+
+.hero-support {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/support.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #4183d7;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+        cursor: pointer;
+      }
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+      padding-top: 150px;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}
+
+.hero-marketing {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/marketing.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #2ecc71;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #26ab5f;
+        border-color: #239a55;
+        cursor: pointer;
+      }
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+      padding-top: 150px;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}
+
+.hero-telecoms {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/telecoms.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #d64541;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #c42e2a;
+        border-color: #b32a27;
+        cursor: pointer;
+      }
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+      padding-top: 150px;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}
+
+.hero-design {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/design.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #926fb1;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #7e57a0;
+        border-color: #735093;
+        cursor: pointer;
+      }
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+      padding-top: 150px;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}
+
+.hero-security {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+  background-image: url('../assets/banner/security.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  $current-slide: 2;
+
+
+  &-content {
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 3rem;
+
+      @media (min-width: 992px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    >h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      line-height: 1.75rem;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+
+      }
+    }
+
+    >a {
+      background-color: #f62459;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      margin: 1.95rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-weight: 400;
+      border: 1px solid transparent;
+
+      >svg {
+        fill: white;
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+
+        background-color: #e80a42;
+        border-color: #d4093c;
+        cursor: pointer;
+      }
+
+      @media (min-width: 992px) {
+        margin: 1.938rem 0 1.125rem 0;
+        padding: 5px 20px;
+        line-height: 50px;
+        height: auto;
+
+      }
+
+    }
+
+
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      height: 100%;
+      padding-top: 150px;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1200px;
+      margin: auto;
+    }
+
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    background-blend-mode: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    * {
+      z-index: 2;
+    }
+  }
+
+}

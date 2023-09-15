@@ -1,0 +1,14 @@
+#main {
+    background-color: white;
+    position: absolute;
+    top: 168px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        top: 110px;
+    }
+
+    @media (min-width: 992px) {
+        top: 209px;
+    }
+}

@@ -1,0 +1,808 @@
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
+
+  &.can-animate {
+    transition: transform 0.3s ease, visibility 0s 0.3s linear;
+  }
+
+  &.is-fixed {
+
+    position: fixed;
+    transform: translate3d(0, -100%, 0);
+
+  }
+
+  &.scroll-up {
+    transform: translate3d(0, 0, 0);
+  }
+
+}
+
+// Header top section
+
+#header-top {
+  padding: 20px 15px;
+
+  @media (min-width: 768px) {
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 992px) {
+    padding: 1.25rem 0;
+  }
+
+  @media (min-width: 1260px) {
+    padding: 1.25rem 0;
+  }
+
+  @media (min-width: 1536px) {
+    padding: 1.25rem 0;
+  }
+
+  // Main navigation container
+  #main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px 14px;
+    padding: 7px 0;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      align-items: start;
+      gap: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+
+  }
+
+  // Logo
+  #title {
+    flex: 1;
+
+    @media (min-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+
+    @media (min-width: 992px) {
+      margin-right: 64px;
+      padding-left: 0;
+    }
+
+    @media (min-width: 1260px) {
+      margin-right: 14px;
+    }
+
+
+    img {
+      cursor: pointer;
+      max-height: 54px;
+
+
+      @media (min-width: 768px) {
+        min-width: 345px;
+        max-height: 60px;
+      }
+
+      @media (min-width: 992px) {
+        width: 374px;
+        max-height: 65px;
+      }
+
+      @media (min-width: 1260px) {
+        width: 370px;
+        margin-right: 3rem;
+      }
+
+    }
+  }
+
+  // Support section
+  #support {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+
+    a {
+      background-color: #4183d7;
+      flex: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.5rem;
+      margin-top: 7px;
+      margin-right: 0.75rem;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2a6ec6;
+      }
+
+      svg {
+        fill: #fff;
+        margin-right: 0.25rem;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        color: #fff;
+      }
+    }
+  }
+
+  // Contact section
+  #contact {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+
+    a {
+      background-color: #999aa2;
+      flex: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.5rem;
+      margin-top: 7px;
+      margin-right: 0.75rem;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #7e808a;
+      }
+
+      svg {
+        fill: #fff;
+        margin-right: 0.25rem;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        color: #fff;
+      }
+    }
+  }
+
+  // Call and burger section
+  #call-and-burger {
+    display: flex;
+    align-items: center;
+
+
+    @media (min-width: 768px) {
+      order: 2;
+    }
+
+    @media (min-width: 1536px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    #call {
+      display: none;
+      padding-bottom: 2px;
+
+      @media (max-width: 767px) {
+        display: block;
+      }
+
+      a {
+        cursor: pointer;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          fill: #333645;
+        }
+      }
+    }
+
+    #hamburger {
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #333645;
+      padding: 8px 12px 8px 12px;
+      margin-left: 20px;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      @media (min-width: 768px) {
+        margin: 7px 15px 7px 20px;
+      }
+
+      @media (min-width: 992px) {
+        margin-left: 0.75rem;
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: #22242e;
+      }
+
+      .svg-icon rect {
+        fill: white;
+        transition: all .3s ease;
+      }
+
+
+    }
+  }
+
+
+
+  // Search section
+  #search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.9rem;
+    background-color: #e5e5e5;
+    border: 2px solid rgba(0, 0, 0, .1);
+    outline: 1px solid hsla(0, 0%, 100%, .2);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    border-radius: 0.125rem;
+
+    @media (min-width: 768px) {
+      order: 1;
+      height: 3.5rem;
+      width: 14.75rem;
+      background-color: #999aa2;
+      border: 0;
+      transition: background-color 0.3s ease;
+      border-radius: 0.2rem;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+
+    @media (min-width: 992px) {
+      width: 4rem;
+    }
+
+    @media (min-width: 1260px) {
+      width: 19rem;
+    }
+
+    #input-wrapper {
+      flex: 1;
+
+
+      @media (min-width: 768px) {
+        flex: 1;
+        // border: 1px solid #cccccc;
+        height: 3.5rem;
+
+      }
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+
+      @media (min-width: 1260px) {
+        display: block;
+      }
+
+      @media (min-width: 1260px) {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+        background-color: #e5e5e5;
+        color: #555;
+
+
+        &:focus {
+          background-color: #fff;
+          background-image: none;
+          border-radius: 0;
+          border: 1px solid #5bc0de;
+          outline: 0;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        @media (min-width: 768px) {
+          width: 100%;
+          background-color: #fff;
+          height: 100%;
+          padding: 0 1rem 0 1rem;
+          border: 1px solid #ccc;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        }
+
+        @media (min-width: 992px) {
+          width: 100%;
+        }
+      }
+    }
+
+    #search-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 0 8px 4px 8px;
+      cursor: pointer;
+      border-top: 1px solid #DDDDDD;
+      border-radius: 0 0.25rem 0.25rem 0;
+
+
+      svg {
+        width: 20px;
+        height: 22px;
+        fill: #333645;
+
+        @media (min-width: 768px) {
+          width: 23px;
+          height: 27px;
+          margin: 0;
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        background-color: #7e808a;
+      }
+
+      @media (min-width: 768px) {
+        width: 4rem;
+        border: none;
+      }
+
+
+
+    }
+
+
+
+
+  }
+
+
+}
+
+
+
+// Nav bar
+
+#header-bottom {
+  display: none;
+  background-color: #333645;
+
+  @media (min-width: 992px) {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    // each button has a nav-item container
+    .nav-item {
+
+      // which holds a button
+      >a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 99px;
+        width: 134px;
+        background-color: #333645;
+        cursor: pointer;
+        padding: 1.2rem 0 0.8rem 0;
+        position: relative;
+
+        // each nav button has a triangle
+        &::before {
+          content: "";
+          display: none;
+          position: absolute;
+          bottom: -35px; // Adjust this value to position the triangle
+          left: 50%;
+          transform: translateX(-50%);
+          border-left: 68px solid transparent; // Adjust this value to change the size of the triangle
+          border-right: 68px solid transparent; // Adjust this value to change the size of the triangle
+          border-top: 35px solid black;
+          z-index: 99;
+
+        }
+
+        @media (min-width: 1260px) {
+          &::before {
+
+            content: "";
+            display: none;
+            position: absolute;
+            bottom: -35px; // Adjust this value to position the triangle
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 83px solid transparent; // Adjust this value to change the size of the triangle
+            border-right: 83px solid transparent; // Adjust this value to change the size of the triangle
+            border-top: 35px solid black;
+            z-index: 99;
+
+          }
+        }
+
+        &:hover {
+          svg {
+            fill: white;
+          }
+        }
+
+        &:hover::before {
+          display: block;
+        }
+
+        &:hover+.dropdown {
+          display: flex;
+        }
+
+        // has an icon
+        >svg {
+          margin-bottom: 0.4rem;
+        }
+
+        // top line of title
+        >p:nth-of-type(1) {
+          font-size: 0.625rem;
+          margin-bottom: -0.4rem;
+          color: #fff;
+        }
+
+        // bottom line of title
+        >p:nth-of-type(2) {
+          font-size: 1.125rem;
+          color: #fff;
+        }
+
+
+        @media (min-width: 1260px) {
+          width: 167px;
+        }
+      }
+
+      // and a dropdown container. The container puts the menu in the centre
+      .dropdown {
+        display: none;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+
+        // the menu stacks a title above a table
+        &-menu {
+          display: flex;
+          flex-direction: column;
+          gap: 27px;
+          width: 970px;
+
+          a {
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          @media (min-width: 1260px) {
+            width: 1200px;
+          }
+
+          // the title is just a title
+          &-title {
+            font-size: 2rem;
+            margin-top: -8px;
+          }
+
+          // each table creates vertical space between rows 
+          &-table {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-size: 1.2rem;
+            line-height: 1.313;
+
+            // each row puts boxes to the side of each other
+            &-row {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 10px;
+
+              // each box puts the icon and text side by side
+              &-box {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                // each row has an icon
+                svg {
+                  height: 19px;
+                  fill: #fff;
+                }
+
+
+
+              }
+
+            }
+
+
+          }
+
+        }
+
+
+      }
+
+
+      // when any part of the nav-item is hovered both the triangle and the dropdown are displayed
+      &:hover {
+        >a::before {
+          display: block;
+        }
+
+        >.dropdown {
+          display: flex;
+        }
+      }
+
+    }
+
+    // custom colours for all the buttons
+
+    #bespoke {
+
+      >a>svg {
+        fill: #67809f;
+      }
+
+      .dropdown {
+        background-color: #526781;
+      }
+
+      &:hover {
+        >a {
+          background-color: #67809f;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #67809f;
+          }
+        }
+      }
+    }
+
+    #it-support {
+
+      >a>svg {
+        fill: #4484d7;
+      }
+
+      .dropdown {
+        background-color: #286ABD;
+
+      }
+
+      &:hover {
+        >a {
+          background-color: #4484d7;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #4484d7;
+          }
+        }
+      }
+
+
+    }
+
+    #digital-marketing {
+
+      >a>svg {
+        fill: #5ecd73;
+      }
+
+      .dropdown {
+        background-color: #25A25A;
+
+      }
+
+      &:hover {
+        >a {
+          background-color: #5ecd73;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #5ecd73;
+          }
+        }
+      }
+
+
+    }
+
+    #telecoms-services {
+
+      >a>svg {
+        fill: #d64541;
+      }
+
+      .dropdown {
+        background-color: #BC2C28;
+
+      }
+
+      &:hover {
+        >a {
+          background-color: #d64541;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #d64541;
+          }
+        }
+      }
+
+
+    }
+
+    #web-design {
+
+      >a>svg {
+        fill: #926fb1;
+      }
+
+      .dropdown {
+        background-color: #79539A;
+
+
+      }
+
+      &:hover {
+        >a {
+          background-color: #926fb1;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #926fb1;
+          }
+        }
+      }
+
+    }
+
+    #cyber-security {
+
+      >a>svg {
+        fill: #ed3b58;
+      }
+
+      .dropdown {
+        background-color: #DE093F;
+
+      }
+
+      &:hover {
+        >a {
+          background-color: #ed3b58;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #ed3b58;
+          }
+        }
+      }
+
+
+
+    }
+
+    #developer-course {
+
+      >a>svg {
+        fill: #ce412c;
+      }
+
+      .dropdown {
+        background-color: #A3331D;
+
+
+      }
+
+      &:hover {
+        >a {
+          background-color: #ce412c;
+
+          >svg {
+            fill: white;
+          }
+
+          &::before {
+            border-top: 35px solid #ce412c;
+          }
+        }
+      }
+
+    }
+
+
+    // custom colours for all the dropdowns
+
+    #bespoke-dropdown {}
+
+    #it-support-dropdown {}
+
+    #digital-marketing-dropdown {}
+
+    #telecoms-services-dropdown {}
+
+    #web-design-dropdown {}
+
+    #cyber-security-dropdown {}
+
+    #developer-course-dropdown {}
+
+
+  }
+
+}

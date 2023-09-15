@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'sidenav';
+@import 'container';
+@import 'cover';
+@import 'cookie-consent';
+@import 'header';
+@import 'main';
+@import 'hero';
+@import 'services';
+@import 'company';
+@import 'latest';
+@import 'signup';
+@import 'footer';
+
+:root {
+  color: #333645;
+  letter-spacing: 0.4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.asterisk {
+  color: red;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

@@ -8,6 +8,7 @@ class AppController extends Controller
 {
     public function index()
     {
-        return view('homepage', ['news' => News::all()]);
+        return view('netmatters');
+        // return view('homepage', ['news' => News::all()]);
     }
 }

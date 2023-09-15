@@ -1,0 +1,249 @@
+.sidenav {
+  height: 100%;
+  width: 275px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #333645;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  line-height: 1.42857143;
+  visibility: hidden;
+
+  .main {
+
+    padding: 21px;
+
+    >ul {
+      margin: -20px 0 0;
+      list-style: none;
+
+      >li {
+        padding: 20px 0 0;
+
+        >a {
+          font-size: 1.125rem;
+          text-decoration: none;
+          padding: 19px 0 18px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+          outline: 1px solid rgba(0, 0, 0, .25);
+          border: 1px solid hsla(0, 0%, 100%, .1);
+          cursor: pointer;
+
+          >svg {
+            padding-bottom: 10px;
+
+            &.bespoke {
+              fill: rgb(103, 128, 159);
+            }
+
+            &.support {
+              fill: rgb(65, 131, 215);
+            }
+
+            &.marketing {
+              fill: rgb(46, 204, 113);
+            }
+
+            &.telecoms {
+              fill: rgb(214, 69, 65);
+            }
+
+            &.design {
+              fill: rgb(146, 111, 177);
+            }
+
+            &.security {
+              fill: rgb(246, 36, 89);
+            }
+
+            &.training {
+              fill: rgb(206, 65, 37);
+            }
+
+          }
+        }
+
+        a small {
+          font-size: .625rem;
+          padding-bottom: 1px;
+
+        }
+
+        >.sub-menu-banner {
+          margin-top: 20px;
+          border-radius: 3px;
+          overflow: hidden;
+
+          >ul {
+            padding: 0;
+
+            >li {
+              >a {
+                display: block;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: rgba(0, 0, 0, .25);
+                padding: 10px;
+                text-decoration: none;
+              }
+            }
+          }
+
+          h2 {
+            font-weight: 400;
+            margin: 0 0 15px;
+            color: #333645;
+            font-size: 2rem;
+          }
+
+          .sub-menu-banner-title {
+            display: none;
+          }
+
+          >ul>li:not(:first-child) {
+            border-top: 1px solid rgba(0, 0, 0, .45);
+
+            >a {
+              border-top: 1px solid hsla(0, 0%, 100%, .05);
+            }
+          }
+
+          .link-icon-container {
+            display: none;
+
+            .link-icon {
+              display: none;
+
+            }
+          }
+
+
+        }
+
+
+      }
+
+      >li.software>a span {
+        color: #67809f;
+      }
+    }
+
+  }
+
+  >ul {
+    border-top: 1px solid rgba(0, 0, 0, .25);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .active {
+      display: none;
+
+      @media (min-width: 992px) {
+        display: block;
+      }
+    }
+
+    >li {
+      border-top: 1px solid hsla(0, 0%, 100%, .1);
+      border-bottom: 1px solid rgba(0, 0, 0, .25);
+
+      >a {
+        display: block;
+        color: #fff;
+        padding: 20px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1;
+        position: relative;
+      }
+
+      >.sub-menu-banner>ul {
+        padding-left: 0;
+        width: auto !important;
+
+        >li {
+          border-top: 1px solid rgba(0, 0, 0, .45);
+
+          >a {
+            border-top: 1px solid hsla(0, 0%, 100%, .05);
+            display: block;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .25);
+            padding: 15px 20px;
+            text-transform: uppercase;
+            font-size: .875rem;
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+
+
+            .link-icon-container {
+              display: none;
+            }
+
+            .link-icon {
+              display: none;
+            }
+
+            .fa {
+              display: inline-block;
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+          }
+
+          >a:before {
+            content: "\BB";
+            padding-right: 15px;
+          }
+
+        }
+
+        h2 {
+          font-weight: 400;
+          margin: 0 0 15px;
+          color: #333645;
+          font-size: 2rem;
+        }
+      }
+
+      .sub-menu-banner-title {
+        display: none;
+      }
+
+
+    }
+
+
+  }
+
+  .sm-md-only {
+    display: block;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+    width: 350px;
+  }
+
+}

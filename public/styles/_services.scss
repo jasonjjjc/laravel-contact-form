@@ -1,0 +1,513 @@
+#services {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.125rem;
+  width: 100%;
+  background-color: white;
+
+  &-content {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 1rem;
+
+    >h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      margin-bottom: 2.25rem;
+
+      @media (min-width: 768px) {
+        font-size: 2.75rem;
+        margin-bottom: 0;
+      }
+    }
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      // gap between upper and lower sections
+      gap: 2rem;
+
+      // add a gap between every card in upper and lower sections
+      >div {
+        gap: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        order: 2;
+      }
+
+      &-upper,
+      &-lower {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        >a>div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          border-radius: 1rem;
+          border: 1px solid #D1D5DB;
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+          padding: 1.75rem;
+          cursor: pointer;
+
+          >div:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+
+            >svg {
+              width: 2rem;
+              height: 2rem;
+              fill: white;
+            }
+
+          }
+
+          >h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.05rem;
+          }
+
+          >p {
+            font-size: 13px;
+            line-height: 1.625;
+            margin-bottom: 13px;
+            letter-spacing: 0.05rem;
+            text-align: center;
+          }
+
+          >div:last-child {
+            padding: 0.75rem 1rem 0.75rem 1rem;
+            border-radius: 0.2rem;
+
+            >p {
+              color: white;
+            }
+
+          }
+
+          &:hover {
+            color: white;
+            background-color: #67809F;
+            transform: translateY(-0.75rem);
+            transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+
+            >div:first-child {
+              background-color: white;
+
+            }
+
+            >h2 {
+              color: white;
+            }
+
+            >p {
+              color: white;
+            }
+
+
+            >div:last-child {
+              background-color: white;
+
+              >p {
+                color: #67809F;
+              }
+            }
+          }
+
+          &:not(:hover) {
+            transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          @media (min-width: 768px) {
+            margin-bottom: 0;
+          }
+        }
+
+      }
+
+
+      &-upper {
+
+        a #services-bespoke-software {
+
+          :first-child {
+            background-color: #67809F;
+          }
+
+          :last-child {
+            background-color: #67809F;
+          }
+
+          &:hover {
+            background-color: #67809F;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #67809F;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #67809F;
+              }
+
+            }
+
+
+          }
+        }
+
+        a #services-it-support {
+
+          :first-child {
+            background-color: #4484D7;
+          }
+
+          :last-child {
+            background-color: #4484D7;
+          }
+
+          &:hover {
+            background-color: #4484D7;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #4484D7;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #4484D7;
+              }
+
+            }
+
+
+          }
+        }
+
+        a #services-digital-marketing {
+
+          :first-child {
+            background-color: #5ECD73;
+          }
+
+          :last-child {
+            background-color: #5ECD73;
+          }
+
+          &:hover {
+            background-color: #5ECD73;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #5ECD73;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #5ECD73;
+              }
+
+            }
+
+
+          }
+
+        }
+
+        @media (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        @media (min-width: 992px) {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 2rem;
+        }
+
+
+      }
+
+
+      &-lower {
+
+        a #services-telecoms-services {
+
+          :first-child {
+            background-color: #D64541;
+          }
+
+          :last-child {
+            background-color: #D64541;
+          }
+
+          &:hover {
+            background-color: #D64541;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #D64541;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #D64541;
+              }
+
+            }
+
+
+          }
+        }
+
+        a #services-web-design {
+
+          :first-child {
+            background-color: #926FB1;
+          }
+
+          :last-child {
+            background-color: #926FB1;
+          }
+
+          &:hover {
+            background-color: #926FB1;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #926FB1;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #926FB1;
+              }
+
+            }
+
+
+          }
+        }
+
+        a #services-cyber-security {
+
+          :first-child {
+            background-color: #ED3B58;
+          }
+
+          :last-child {
+            background-color: #ED3B58;
+          }
+
+          &:hover {
+            background-color: #ED3B58;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #ED3B58;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #ED3B58;
+              }
+
+            }
+
+
+          }
+        }
+
+        a #services-developer-training {
+
+          :first-child {
+            background-color: #CE412C;
+          }
+
+          :last-child {
+            background-color: #CE412C;
+          }
+
+          &:hover {
+            background-color: #CE412C;
+
+            :first-child {
+              background-color: white;
+
+              >svg {
+                fill: #CE412C;
+              }
+
+            }
+
+            :last-child {
+              background-color: white;
+
+              >p {
+                color: #CE412C;
+              }
+
+            }
+
+
+          }
+        }
+
+        @media (min-width: 768px) {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 2rem;
+          margin-bottom: 3.5rem;
+        }
+
+        @media (min-width: 1260px) {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+      }
+
+    }
+
+    &-work {
+      cursor: pointer;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      padding-bottom: 2px;
+
+      // bring the border up to the bottom of the text
+      >* {
+        margin-bottom: -1px;
+      }
+
+      >h1 {
+        font-size: 1.625rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.1;
+
+      }
+
+      >svg {
+        stroke: #333645;
+        width: 28px;
+        height: 28px;
+      }
+
+      &:hover {
+        padding-bottom: 0;
+        border-bottom: 2px solid #333645;
+      }
+
+      @media (min-width: 768px) {
+        order: 1;
+        margin-top: 0;
+      }
+    }
+
+
+    @media (min-width: 768px) {
+      padding: 0 1.5rem 0 1.5rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    @media (min-width: 992px) {
+      padding: 0 2.5rem 0 2.5rem;
+
+    }
+
+    @media (min-width: 1260px) {
+      padding: 0 1rem 0 1rem;
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+
+  }
+
+
+  // styles for 'Slick' jquery plugin version of accreditations
+
+  .accreditations-slider {
+    padding: 50px 0;
+
+    .slick-slide {
+      max-height: 70px;
+      max-width: 200px;
+      margin-right: 60px;
+      padding: 0 20px;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+
+  }
+
+
+
+  
+
+}

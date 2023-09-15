@@ -1,0 +1,172 @@
+#signup-wrapper {
+    background-color: #DDDDDD;
+
+    #signup {
+
+        display: flex;
+        flex-direction: column;
+        padding: 50px 15px;
+
+        &-title {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+
+            &-inputs {
+                display: flex;
+                flex-direction: column;
+
+
+                >* {
+                    margin-bottom: 1rem;
+
+                    label {
+
+                        font-size: 1rem;
+                        line-height: 2rem;
+                        font-weight: 600;
+
+
+                    }
+
+                    input {
+                        margin-top: 5px;
+                        width: 100%;
+                        height: 47px;
+                        padding: 5px 15px 5px 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 2px;
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+
+                        &:focus {
+                            background-color: #fff;
+                            background-image: none;
+                            border-radius: 0;
+                            border: 1px solid #5bc0de;
+                            outline: 0;
+                            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
+                            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                        }
+                    }
+
+
+                }
+
+
+                @media (min-width: 992px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    grid-gap: 2rem;
+                }
+
+            }
+
+
+
+
+            &-marketing {
+                display: flex;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                line-height: 32px;
+
+
+                &-checkbox {
+                    /* Hide the default checkbox appearance */
+                    appearance: none;
+
+                    /* Create a white box with a border when unchecked */
+                    border: 3px solid #333645;
+                    border-radius: 3px;
+                    width: 32px;
+                    height: 32px;
+                    background-color: transparent;
+                    flex-shrink: 0;
+                    margin-right: 20px;
+
+                    /* Add a custom checkmark when checked */
+                    &:checked {
+                        background-color: #333645;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-40%, -60%) rotate(45deg);
+                            width: 7px;
+                            height: 15px;
+                            border: 2px solid white;
+                            border-width: 0 2px 2px 0;
+                        }
+                    }
+                }
+            }
+
+
+
+            &-button {
+
+                height: auto;
+                width: fit-content;
+                line-height: 35px;
+                padding: 5px 15px;
+                text-transform: uppercase;
+                font-size: 1.063rem;
+                border-radius: 3px;
+                white-space: normal;
+                color: #fff;
+                background-color: #333645;
+                border-color: #333645;
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+
+
+                &:hover {
+                    background-color: #22242E;
+                }
+
+            }
+
+
+
+        }
+
+
+
+        @media (min-width: 768px) {
+            padding: 50px 25px 50px 25px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 50px 42px 50px 42px;
+        }
+
+        @media (min-width: 1260px) {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 50px 15px 50px 15px;
+        }
+
+
+
+
+
+    }
+
+}

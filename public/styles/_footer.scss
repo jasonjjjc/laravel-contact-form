@@ -1,0 +1,237 @@
+@import 'colours';
+
+// _footer.scss
+#footer {
+  color: white;
+
+  // Nav links container
+  #nav-wrapper {
+    background-color: $primary;
+
+    #nav {
+      padding-top: 27px;
+      padding-left: 15px;
+
+      &-social {
+
+        &-icon {
+          // Logo image
+          width: 250px;
+          margin-bottom: 1.5rem;
+
+          @media (min-width: 768px) {
+            min-width: 20rem;
+          }
+
+        }
+
+        &-links {
+
+          // Social media links
+          p {
+            font-size: 1rem;
+            line-height: 1.1;
+            margin-bottom: 26px;
+          }
+
+          div {
+            display: inline-grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 2.5rem;
+
+
+            @media (min-width: 768px) {
+              margin-bottom: 2.5rem;
+              display: flex;
+              gap: 10px;
+            }
+
+            >a {
+              background-color: #212330;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 56px;
+              width: 101.5px;
+
+              >svg {
+                fill: white;
+                height: 26px;
+              }
+
+              @media (min-width: 768px) {
+                display: block;
+                width: fit-content;
+                padding: 16px 22px 16px 22px;
+              }
+            }
+
+            #facebook {
+              &:hover {
+                background-color: #3B5998;
+              }
+            }
+
+            #linkedin {
+              &:hover {
+                background-color: #2877B5;
+              }
+            }
+
+            #twitter {
+              &:hover {
+                background-color: #41ACED;
+              }
+            }
+
+            #instagram {
+              &:hover {
+                background-color: #DA3A75;
+              }
+            }
+
+
+          }
+
+        }
+
+        @media (min-width: 1280px) {
+          margin-right: 5rem;
+        }
+
+
+      }
+
+      &-pages {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+
+        div {
+
+          margin-bottom: -2px;
+
+          h1 {
+            font-size: 1rem;
+            margin-bottom: 26px;
+            line-height: 1.1;
+          }
+
+          ul {
+            margin-bottom: 2rem;
+
+            li {
+              font-size: 0.8125rem;
+              line-height: 1.375rem;
+
+              :hover {
+                text-decoration: underline;
+              }
+
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0 30px;
+        }
+
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 1.875rem;
+        }
+
+
+      }
+
+      @media (min-width: 768px) {
+        padding: 1.7rem 1.5rem 0 1.5rem;
+
+      }
+
+      @media (min-width: 992px) {
+        padding: 1.7rem 2.5rem 0 2.5rem;
+      }
+
+      @media (min-width: 1260px) {
+        display: flex;
+        padding: 47px 15px 20px 15px;
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+    }
+
+  }
+
+  // Copyright section
+
+  #copyright-wrapper {
+    background-color: #212330;
+
+    #copyright {
+      padding: 15px 15px 12px 15px;
+      font-size: 0.8125rem;
+
+      >* {
+        margin-bottom: -0.1rem;
+      }
+
+      p {
+        margin-right: 0.5rem;
+      }
+
+      &-dash {
+        display: none;
+
+        @media (min-width: 768px) {
+          display: inline-block;
+        }
+      }
+
+      a {
+        :hover {
+          text-decoration: underline;
+        }
+      }
+
+      #copyright-dash {
+        display:none;
+      }
+
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        gap: 0 1px;
+        padding: 15px 24px 13px 24px;
+        line-height: 1.42857143;
+
+        :first-child {
+          margin-right: 3px;
+        }
+
+        >#copyright-dash {
+          display: inline-block;
+        }
+
+
+      }
+
+      @media (min-width: 992px) {
+        padding: 15px 42px 10px 42px;
+      }
+
+      @media (min-width: 1260px) {
+        width: 1200px;
+        padding: 15px 15px 10px 15px;
+        margin: 0 auto;
+      }
+      
+
+    }
+  }
+
+}
