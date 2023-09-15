@@ -24,7 +24,7 @@
               </a>
             </div>
             <div id="contact">
-              <a href="#"
+              <a href="/contact"
                 ><svg
                   height="23"
                   version="1.1"
