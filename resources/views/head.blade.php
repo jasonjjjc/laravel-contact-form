@@ -21,7 +21,12 @@
     <link href="{{ asset('slick/slick-theme.css') }}" rel="stylesheet" type="text/css" />
     <script src="{{ asset('slick/slick.min.js') }}" defer></script>
 
-    <!-- Custom styles and javascript -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles -->
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+
+    <!-- Custom scripts -->
     <script src="{{ asset('js/main.js') }}" defer></script>
 </head>

@@ -11,10 +11,15 @@
 @import 'latest';
 @import 'signup';
 @import 'footer';
+@import 'contact';
+
 
 :root {
   color: #333645;
   letter-spacing: 0.4px;
+}
+
+html body {
   font-family: 'Poppins', sans-serif;
 }
 
